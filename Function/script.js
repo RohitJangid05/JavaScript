@@ -5,10 +5,10 @@ function greet(){
 greet()
 
 // resuable function 
-function sum(a,b){
+function sum(a,b){ //! sum(a,b) here a,b are function parameters 
     return a+b
 }
-console.log(sum(10,20))
+console.log(sum(10,20)) //! sum(10,20) here 10,20 are function arguments
 console.log(sum(50,10))
 
 // Function expression 
