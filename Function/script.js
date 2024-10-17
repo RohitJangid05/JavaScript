@@ -1,26 +1,37 @@
 // Function 
-function greet(){
-    console.log("Hello world")
+function greet() {
+    console.log("Hello world");
 }
-greet()
+greet();
 
-// resuable function 
-function sum(a,b){ //! sum(a,b) here a,b are function parameters 
-    return a+b
+// Reusable function 
+function sum(a, b) { // a, b are function parameters 
+    return a + b; // Returns the sum of a and b
 }
-console.log(sum(10,20)) //! sum(10,20) here 10,20 are function arguments
-console.log(sum(50,10))
+console.log(sum(10, 20)); // Outputs 30
+console.log(sum(50, 10)); // Outputs 60
 
 // Function expression 
-var myFunc=function greet(){
-    return "Hello world, these is function expression"
+var myFunc = function greet() {
+    return "Hello world, this is a function expression";
 }
-console.log(myFunc) //!it will display that what the variable hold
-console.log(myFunc()) //! to exectue the function using variable use the perentisis
+console.log(myFunc); // Logs the function itself
+console.log(myFunc()); // Executes the function
 
-//Anonymous Function
-
-var newFun=function(){
-    return "Hello World, these is anonymous function"
+// Anonymous Function
+var newFun = function() {
+    return "Hello World, this is an anonymous function";
 }
-console.log(newFun())
+console.log(newFun()); // Calls the anonymous function
+
+// IIFE - Immediately Invoked Function Expression
+(function(x, y) {
+    console.log(x + y); // Outputs 30
+})(10, 20);
+
+var IIFEfun = (function(x, y) {
+    return x + y // Outputs 60
+})(40, 20); // Immediately invokes the function with arguments 40 and 20
+
+console.log(IIFEfun); // Logs the value of IIFEfun, which is undefined
+
