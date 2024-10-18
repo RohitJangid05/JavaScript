@@ -31,6 +31,11 @@
 // newarr.splice(2,3,"hello")
 // console.log(newarr)
 
+//! .at() these function index/points to the last element of an array
+// let names=["rohit","rahul","virat","ashwin"]
+// console.log(names.at(-1).length)
+// console.log(names.at(-2))
+
 //! map() Applies a function (perform a activity on each element) to each element and returns a new array:
 
 //?the map method takes a callback i,e function as an input which has two paramaters i,e element and index
