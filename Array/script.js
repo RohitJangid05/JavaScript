@@ -84,3 +84,16 @@
 
 // let fruits = ['apple', 'banana', 'orange'];
 // fruits.forEach(fruit => console.log(fruit));
+
+
+
+//! for of and for in loop with array
+
+// let arr=["rohit","rahul","virat","sachin"]
+// for(let ele of arr){
+//     console.log(ele)
+// }
+
+// for(let index in arr){
+//     console.log(index)
+// }

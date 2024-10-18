@@ -38,7 +38,7 @@ map() – Applies a function to each element and returns a new array:
 filter() – Returns an array of elements that meet a condition:
     let evenNumbers = numbers.filter(num => num % 2 === 0); // [2, 4]
 
-reduce() function in JavaScript is used to reduce an array to a single value by executing a reducer function on each element of the array. It accumulates the results in an "accumulator," which is returned when the iteration is complete.
+reduce()- function in JavaScript is used to reduce an array to a single value by executing a reducer function on each element of the array. It accumulates the results in an "accumulator," which is returned when the iteration is complete.
 
 forEach() – Iterates over each element (does not return a new array):
     fruits.forEach(fruit => console.log(fruit));
