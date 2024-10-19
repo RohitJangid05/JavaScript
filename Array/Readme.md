@@ -42,3 +42,14 @@ reduce()- function in JavaScript is used to reduce an array to a single value by
 
 forEach() – Iterates over each element (does not return a new array):
     fruits.forEach(fruit => console.log(fruit));
+
+indexOf()-
+    indexOf these method is used to find the index of element in an array, it takes two paramaters i,e element,fromIndex. where the element is the value whose index is neded to be find and the fromIndex define array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.
+    it will return -1 if elementnot found
+
+lastIndexOf()
+    lastIndexOf these method is used to find the element present at the last index, it takes two paramaters i,e element,fromIndex. where the element is the value whose index is neded to be find and the fromIndex define array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.
+    it will return -1 if elementnot found
+
+includes()
+    includes method is used to check whether the element is present in an arrya or not it return true if it is present or return false if it is not present

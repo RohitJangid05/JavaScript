@@ -97,3 +97,17 @@
 // for(let index in arr){
 //     console.log(index)
 // }
+
+//! indexOf()
+// let arr=[1,2,3,4,5,4,6,7,8,9,4]
+// console.log(arr.indexOf(4))
+// console.log(arr.indexOf(4,6))
+
+//!lastIndexOf()
+// let arr=[1,2,3,4,5,4,4,6,7,8,9,4]
+// console.log(arr.lastIndexOf(7))
+
+//!includes
+let arr=[1,2,3,4,5]
+console.log(arr.includes(4))
+console.log(arr.includes(7))
