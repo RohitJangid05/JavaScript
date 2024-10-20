@@ -65,3 +65,8 @@ Common Built-in Object Methods
     Object.keys(obj) returns an array of a given object's property names.
     Object.values(obj) returns an array of a given object's property values.
     Object.entries(obj) returns an array of a given object's key-value pairs.
+
+Object Constructor Functions
+  Sometimes we need to create many objects of the same type.
+  To create an object type we use an object constructor function.
+  It is considered good practice to name constructor functions with an upper-case first letter.
