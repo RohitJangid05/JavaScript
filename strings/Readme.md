@@ -1,18 +1,40 @@
 In JavaScript, a string is a sequence of characters used to represent text. Strings can be created using either single quotes ('), double quotes ("), or backticks (`).
 
-Common String Methods:
-    -Length: string.length - returns the length of the string.
-    -Concatenation: string1 + string2 or string1.concat(string2) - combines two strings.
-    -Access character: string[index] - retrieves the character at a specific index.
-    -Substring: string.substring(start, end) - extracts part of the string.
-    -slice:string.substring(start, end) - extracts part of the string.
-    -Includes: string.includes(substring) - checks if a substring exists in the string.
-    -Replace: string.replace('old', 'new') - replaces a part of the string.
-    -toUpperCase: convert the whole string to uppercase
-    -toLowerCase: convert the whole string to lowercase
-    -trim:The trim() method in JavaScript is used to remove whitespace from both ends of a string.The trim() method does not change the original string.
+String Methods:
 
-string methods
+Length: 
+    string.length - returns the length of the string.
+
+Concatenation: 
+    string1 + string2 or string1.concat(string2) - combines two strings.
+    
+Access character: 
+    string[index] - retrieves the character at a specific index.
+
+Substring: 
+    string.substring(start, end) - extracts part of the string.
+   
+slice:
+    string.substring(start, end) - extracts part of the string.
+
+Includes: 
+    string.includes(substring) - checks if a substring exists in the string.
+
+Replace: 
+    string.replace('old', 'new') - replaces a part of the string.
+ 
+toUpperCase: 
+    convert the whole string to uppercase
+
+toLowerCase: 
+    convert the whole string to lowercase
+
+trim:
+    The trim() method in JavaScript is used to remove whitespace from both ends of a 
+    string.The trim() method does not change the original string.
+
+split() 
+    method is used to split a string into an array of substrings based on a specified separator. The original string is unchanged. Here's the basic syntax:
 
 search():
     it is used to search the string in an string it will return the index of the searched element/string return -1 if it no found, it has the power that we can use regular expression i,e console.log(str.search(/javaScript/i))
@@ -45,3 +67,9 @@ indexOf()-
 lastIndexOf()
     lastIndexOf these method is used to find the element present at the last index, it takes two paramaters i,e element,fromIndex. where the element is the value whose index is neded to be find and the fromIndex define array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.
     it will return -1 if elementnot found
+
+charCodeAt();
+    these method takes character as input and return the ASCII code of a charater 
+
+String.fromCharCode():
+    these method takes ASCII code as an input and return the character of that code

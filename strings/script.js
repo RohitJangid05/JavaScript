@@ -19,9 +19,14 @@
 // console.log(str.toLowerCase())
 
 //! trim
-let str = "   Hello World!   ";
-let trimmedStr = str.trim();
-console.log(trimmedStr); // "Hello, World!"
+// let str = "   Hello World!   ";
+// let trimmedStr = str.trim();
+// console.log(trimmedStr);
+
+//! split
+// let str="Hello World"
+// console.log(str.split(' '))
+// it will return an array
 
 
 //!Includes
@@ -112,3 +117,13 @@ console.log(trimmedStr); // "Hello, World!"
 // let str="Hello"
 // console.log(str.at(1))
 // console.log(str.at(-1))
+
+//! charCodeAt()
+
+let char="a"
+console.log(char.charCodeAt())
+
+//! String.fromCharCode()
+
+let code=122
+console.log(String.fromCharCode(code))
