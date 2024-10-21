@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Properties Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            padding-left: 40px;
+            padding-bottom: 100px;
+        }
+
+        h1:first-child {
+    color: red;
+}
+
+        h1 {
+            color: #4CAF50;
+            margin-top: 50px;
+        }
+
+        #width,
+        #height {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 12px 24px;
+            margin: 20px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:active {
+            background-color: #3e8e41;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Window Properties in JavaScript</h1>
+    <h1>Windows properties</h1>
+    <ul>
+        <li>innerWidth</li>
+        <li>innerHeight</li>
+        <li>window.open</li>
+    </ul>
+    <p id="width">Window inner width</p>
+    <p id="height">Window inner height</p>
+    <div>
+        <span>opening new window</span>
+        <button onclick="openWindow()">Open New Window</button>
+    </div>
+    <div>
+        <span>Opening new page in same tab</span>
+        <button onclick="window.open('new.html', '_self')">History Properties in JavaScript</button>
+    </div>
+    <h1>Windows History properties</h1>
+    <ul>
+        <li>window.history.forward</li>
+        <li>window.history.backward</li>
+        <li>window.history.go</li>
+    </ul>
+    <div>
+        <span>window history forward / these will work only if you have atleast open new doc on the same page</span>
+        <button onclick="window.history.forward()">Go forward</button>
+    </div>
+    <h1>Windows location</h1>
+    <ul>
+        <li>reload</li>
+        <li>innerHeight</li>
+        <li>window.open</li>
+    </ul>
+    <div>
+        <span>window.loaction.reload</span>
+        <button onclick="location.reload()">Reload</button>
+    </div>
+    <div>
+        <span>window.loaction.replace</span>
+        <button onclick="location.replace('https://www.w3schools.com/js/js_window_location.asp')">visit</button>
+        <small>here you will open the site on the same tab but you can`t use the forward and backward button to
+            navigate</small>
+    </div>
+    <div>
+        <span>window.loaction.assign</span>
+        <button onclick="location.assign('https://www.w3schools.com/js/js_window_location.asp')">visit</button>
+        <small>here you will open the site on the same tab but you can use the forward and backward button to
+            navigate</small>
+    </div>
+
+    <h1>window Screen properties</h1>
+    <p id="screenWidth"></p>
+    <small>it will calculate the whole width including the side bar etc</small>
+    <p id="screenHeight"></p>
+    <small>it will calculate the whole height including the nav bar etc</small>
+    <p id="screenAvailWidth"></p>
+    <small>it will calculate the whole height excluding the nav bar etc</small>
+    <p id="screenAvailHeight"></p>
+    <small>it will calculate the whole height excluding the nav bar etc</small>
+
+
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

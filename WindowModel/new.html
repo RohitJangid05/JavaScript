@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Property in JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-left: 40px;
+            margin-top: 100px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2rem;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px 0;
+            font-size: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:active {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>History Property in JavaScript</h1>
+    <div>
+        <span>window.history.back()</span>
+        <button onclick="window.history.back()">Go back</button>
+    </div>
+    <div>
+        <span>window.history.go()</span>
+        <button onclick="window.history.go(-1)">Goes forward and backward</button>
+    </div>
+</body>
+
+</html>
