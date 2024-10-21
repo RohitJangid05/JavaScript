@@ -105,16 +105,16 @@
 
 //! Object Constructor Functions
 
-function Person(fname, lname, age, profession){
-    this.FirstName=fname
-    this.LastName=lname
-    this.age=age
-    this.profession=profession
-}
+// function Person(fname, lname, age, profession){
+//     this.FirstName=fname
+//     this.LastName=lname
+//     this.age=age
+//     this.profession=profession
+// }
 
 //creating onj out of the constructor function
-const me=new Person("rohit","jangid",20,"student")
-const sachin=new Person("sachin","kanojiya",20,"Student")
-const rahul=new Person("rahul","rajput",20,"student")
+// const me=new Person("rohit","jangid",20,"student")
+// const sachin=new Person("sachin","kanojiya",20,"Student")
+// const rahul=new Person("rahul","rajput",20,"student")
 
-console.log(me," ",rahul," ",sachin)
+// console.log(me," ",rahul," ",sachin)

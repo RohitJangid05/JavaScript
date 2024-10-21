@@ -29,6 +29,7 @@ console.log(newFun()); // Calls the anonymous function
     console.log(x + y); // Outputs 30
 })(10, 20);
 
+
 var IIFEfun = (function(x, y) {
     return x + y // Outputs 60
 })(40, 20); // Immediately invokes the function with arguments 40 and 20

@@ -2,7 +2,7 @@ let num =5;
 for (i=1;i<=num;i++){
     var pattern="";
     for(j=1;j<=i;j++){
-            pattern=pattern+"*";
+            pattern+="*";
     }
     console.log(pattern)
 }
@@ -17,7 +17,7 @@ for (i=1;i<=num;i++){
 for (i=num;i>=1;i--){
     var pattern="";
     for(j=i;j>=1;j--){
-            pattern=pattern+"*";
+            pattern+="*";
     }
     console.log(pattern)
 }
@@ -39,3 +39,10 @@ for (let i = 1; i <= num; i++) {
     }
     console.log(pattern);
 }
+
+//output
+//     *
+//    * *
+//   * * *
+//  * * * *
+// * * * * *
