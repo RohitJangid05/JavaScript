@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111111;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff7878; /* Dark blue for main heading */
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h2:nth-of-type(1) {
+            color: #e74c3c; 
+        }
+
+        h2:nth-of-type(2) {
+            color: #27ae60; 
+        }
+
+        h2:nth-of-type(3) {
+            color: #f39c12; 
+        }
+
+        button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        button:active {
+            background-color: #1f6394;
+        }
+    </style>
+</head>
+<body>
+    <h1>Different ways to handle events in Javascript</h1>
+    
+    <h2>Inline events</h2>
+    <button onclick='alert("Clicked on the Button, Inline Event")'>Click Me</button>
+    <button ondblclick='alert("Double Clicked on the Button, Inline Event")'>Double Click Me</button>
+    <button onmouseover="alert('Mouse/Cursor was over Me, Inline Event')">Mouse Over Me</button>
+    
+    <h2>Traditional Event Handlers (Property-Based)</h2>
+    <button id="btn1">Click</button>
+    <button id="btn2">Double click</button>
+    <button id="btn3">Mouse hover</button>
+    
+    <h2>Modern Event Handlers (addEventListener)</h2>
+    <button id="btnn1">Click</button>
+    <button id="btnn2">Double click</button>
+    <button id="btnn3">Mouse hover</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
