@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Dark background and light text */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #input {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #333;
+            color: #ffffff;
+        }
+
+        div {
+            width: 50%;
+            background-color: #1f1f1f;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 18px;
+            color: #ffffff;
+            margin: 5px 0;
+        }
+
+        .keyPressed,
+        .keyCode,
+        .event {
+            font-weight: bold;
+        }
+
+        .keyPressed::after,
+        .keyCode::after,
+        .event::after {
+            content: ' ';
+            font-weight: normal;
+            color: #aaaaaa;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>KeyBoard Events in JavaScript</h1>
+    <input id="input" type="text" name="Data" placeholder="Type something..." autocomplete="off">
+    <div>
+        <p id="keyPressed">Data :</p>
+        <p id="keyCode">Data :</p>
+        <p id="event">Data :</p>
+    </div>
+    <script>
+
+        let input = document.getElementById("input");
+        let keyPressed = document.getElementById("keyPressed")
+        let keyEvent = document.getElementById("event")
+        let keyCode = document.getElementById("keyCode")
+
+// KEYBOARD EVENT 
+    //! keydown event
+
+        // input.addEventListener('keydown', (e) => {
+        //     keyPressed.innerText = "Key Pressed: " + e.key;
+        //     keyCode.innerText = "Key Code: " + e.keyCode;
+        //     keyEvent.innerText = "Event Type: " + e.type;
+        // })
+
+    //! keyup event
+
+        // input.addEventListener('keyup', (e) => {
+        //     keyPressed.innerText = "Key Pressed: " + e.key;
+        //     keyCode.innerText = "Key Code: " + e.keyCode;
+        //     keyEvent.innerText = "Event Type: " + e.type;
+        // })
+
+// INPUT EVENT
+
+    //! input
+
+        // input.addEventListener("input",(e)=>{
+        //     keyPressed.innerText = `Input Values: ${e.target.value}`;
+        //     keyCode.innerText = `Input type: ${e.inputType}`;
+        //     keyEvent.innerHTML = `Event Type: ${e.type} <br> Event Name: ${e.target.name || 'N/A'}`;
+        // })
+
+    //! change
+
+        input.addEventListener("change",(e)=>{
+            keyPressed.innerText = `Input Values: ${e.target.value}`;
+            keyCode.innerText = `Input type: ${e.inputType}`;
+            keyEvent.innerHTML = `Event Type: ${e.type} <br> Event Name: ${e.target.name || 'N/A'}`;
+        })
+    </script>
+</body>
+
+</html>

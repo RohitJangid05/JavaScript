@@ -28,6 +28,11 @@ Different types of events in JavaScript
         keydown: Triggered when a key is pressed down.
         keyup: Triggered when a key is released.
         keypress: Triggered when a key is pressed (deprecated in some cases).
+    
+    Input Event
+
+        Input Event: Fires in real-time as the user types or modifies the input value while focused.
+        Change Event: Fires after the input element loses focus and only if the value has changed.
 
     Form Events:
 
@@ -45,9 +50,3 @@ Different types of events in JavaScript
     Document Events:
 
         DOMContentLoaded: Triggered when the HTML document has been fully loaded and parsed, without waiting for stylesheets and images.
-
-    Touch Events (for mobile devices):
-
-        touchstart: Triggered when a user touches the screen.
-        touchend: Triggered when a user stops touching the screen.
-        touchmove: Triggered when a user moves their finger across the screen.
